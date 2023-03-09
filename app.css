@@ -1,9 +1,22 @@
 body{
-    height: 1000px;
     background-color: antiquewhite !important;
     font-family:  Helvetica, sans-serif !important;
 }
+.blurb h2{
+    color: black;
+    font-weight: 100;
+    font-size: 2.5rem;
+}
+.blurb p{
+    color: black;
+    font-weight: 100;
+    font-size: 1.123rem;
+    line-height: 2;
+}
 
+.navbar.scrolled{
+    background-color: white;
+}
 
 @media (min-width: 992px) { 
     #head-title{

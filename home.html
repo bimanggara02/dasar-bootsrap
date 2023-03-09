@@ -9,7 +9,7 @@
   </head>
   <body>
     
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/78787/museum-clipart-md.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
@@ -30,7 +30,7 @@
     
     <section>
       <div class="container-fluid">
-        <div class="row m-2">
+        <div class="row align-items-center pt-5 m-md-2 content" id="home">
           <div class="col-lg-6 text-center align-self-center">
             <div class="text-dark d-none d-md-block" id="head-title">
               <h1>Museum Dino</h1>
@@ -41,10 +41,46 @@
           </div>
           <div class="col-lg-6"><img class="img-thumbnail" src="assets/museum1.jpg" alt="museum"></div>
         </div>
+
+        <div class="row align-items-center m-md-2 content" id="about">
+          <div class="col-md-6 order-2 order-md-1"><img src="assets/museum2.jpg" alt="" class="img-thumbnail"></div>
+          <div class="col-md-6 text-center order-1 order-md-2">
+            <div class="row justify-content-center">
+              <div class="col-10 col-lg-8 blurb pt-3">
+              <h2>Museum of Ark</h2>
+              <img src="assets/museum3.jpg" alt="" height="60" class="d-none d-lg-inline">
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore amet aliquid ducimus quo dicta, nostrum unde quaerat. Labore rerum eveniet consectetur culpa non quam sit totam pariatur. Repellendus, animi eos.</p>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center m-md-2 content" id="contact">
+          <div class="col-md-6 order-2 order-md-1"><img src="assets/museum2.jpg" alt="" class="img-thumbnail"></div>
+          <div class="col-md-6 text-center">
+            <div class="row justify-content-center">
+              <div class="col-10 col-lg-8 blurb pt-3">
+              <h2>Museum of Ark</h2>
+              <img src="assets/museum3.jpg" alt="" height="60" class="d-none d-lg-inline">
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore amet aliquid ducimus quo dicta, nostrum unde quaerat. Labore rerum eveniet consectetur culpa non quam sit totam pariatur. Repellendus, animi eos.</p>
+            </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+          $(document).scroll(function(){
+            let $nav = $('#navbar');
+            $nav.toggleClass('scrolled', $(this).scrollTop() < $nav.height());
+          });
+        });
+
+    </script>
   </body>
 </html>
